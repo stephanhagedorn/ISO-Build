@@ -32,6 +32,7 @@ echo.
 
 ECHO Prüfen ob alle benötigten Dateien existieren
 if not exist "%OSCDIMG%" (echo FEHLT: oscdimg.exe & exit /b 1)
+if not exist "%USB%" (mkdir %root%\usb)
 if not exist "%USB%" (echo FEHLT: USB Ordner & exit /b 1)
 if not exist "%ETFSBOOT%" (echo FEHLT: %ETFSBOOT% & exit /b 1)
 if not exist "%EFISYS%" (echo FEHLT: %EFISYS% & exit /b 1)
