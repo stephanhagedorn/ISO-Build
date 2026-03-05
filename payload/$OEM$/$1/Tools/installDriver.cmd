@@ -1,0 +1,1 @@
+pnputil.exe /add-driver %~dp0\*.inf /subdirs /install
